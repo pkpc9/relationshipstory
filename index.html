@@ -9,6 +9,7 @@
         <h3 class="top">Relationship Stories</h3>
         <center>
           <div class="icon" title="icon">
+<img class="iconimg" src="https://schale.gg/images/student/collection/13010.webp"></img>
             <div class="spanbox" >
               <span contenteditable="true">1</span>
             </div>
@@ -72,13 +73,20 @@
         text-shadow: var(--shadow)
       }
 
+      .icon:hover:not(span){
+       background: #0000FF url(https://raw.githubusercontent.com/Templarian/MaterialDesign-SVG/master/svg/plus.svg) center no-repeat;
+        background-size: 50%;
+        cursor: pointer;
+       }
+
       .spanbox {
         float: right;
-        transform: translateY(85px) translateX(85px);
+        transform: translateY(-49px) translateX(85px);
         background: url(https://raw.githubusercontent.com/pkpc99/fs/main/heartline3.svg) 0 52% no-repeat;
         position: absolute;
         width: 49px;
-        height: 49px
+        height: 49px;
+        cursor: text;
       }
 
       .box .top {
@@ -99,8 +107,14 @@
       .icon {
         width: 130px;
         height: 130px;
-        background: url(https://schale.gg/images/student/collection/13010.webp) center center no-repeat;
-        background-size: 110%;
+        overflow: hidden;
+        border-radius: 100%
+      }
+        .icon img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        transform: scale(1.13);
         border-radius: 100%
       }
 
